@@ -1,0 +1,50 @@
+:root{ /*root serve para guarda as cores principais para podemos apenas criar as variaveis para utilizasse sem precisa digita o codigo
+/* Paleta classico institucional*/
+ --cor-principal: #0A2540;
+ --cor-secundaria: #F5B800;
+ --cor-fundo: #f4f6f8;
+ --cor-texto: #1a202c;
+ --cor-branca: #ffffff; /*para coloca a variavel vc usar --nome-da-variavel: valor;*/
+}
+body{
+    background-color: var(--cor-fundo);
+    color:var(--cor-texto);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0%;/*margim e padding remove os espacamentos brancos padroes que os navegadores colocam em volta da pagina*/
+}
+header{ /*header e o cabecalho*/
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    padding: 20px;/*cria um espacamento interno de 20 pixels em volta do conteudo do topo*/
+}
+header h1{
+    color: var(--cor-branca);
+}
+h2{
+    color: var(--cor-texto);
+}
+.btn-destaque{/*classe do botao*/
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    border: none;/*remove a borda preta padrao que os botoes do navegador tem*/
+    padding: 12px 24px;/*Define o tamanho do botao(12px em cima/baixo e 24px nas laterais*/
+    font-weight: bold;/*Arredonda as pontas*/
+    border-radius: 5px;
+    cursor: pointer;/*Faz a setinha do mouse virar a "maozinha" de clique quando passa por cima*/
+    transition: background-color 0.3s ease;/*Faz a cor mudar de forma suave(em 0.3 segundos) ao passar o mouse*/
+}
+.btn-destaque:hover{/*serve para quando o usuario passa o mouse por cima escurece dando a sensacao de interecao*/
+    background-color: #d9a200;/*o uso do amarelo mais escuro para dar o feedback*/
+}
+.card{/*Caixas de Propostas/Conteudo*/
+    background-color: var(--cor-branca);
+    border-left: 4px solid var(--cor-secundaria);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/*background-color: var(--cor-branca);: Fundo branco para destacar do fundo cinza da página.
+
+border-left: 5px solid var(--cor-secundaria);: Cria uma barrinha charmosa de 5px em Amarelo apenas do lado esquerdo da caixa.
+
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);: Aplica uma sombra bem leve atrás do card para dar sensação de profundidade/3D.*/
+}
