@@ -8,7 +8,15 @@
         window.location.href = "index.html";
     });
 }
-
-
+    const btnavança = document.getElementById('btn-avança');
+    if(btnavança){ btnavança.addEventListener('click', () => {
+    window.location.href = 'index3.html';
+    });
+}
+    const bttvolta = document.getElementById('btt-volta');
+    if(bttvolta){ bttvolta.addEventListener('click', () => {
+    window.location.href = 'index2.html'
+    });
+}
 
     
