@@ -89,9 +89,16 @@ header > h1 {
     align-items: center;
     z-index: 1000;
 }
+.icon{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    padding: auto;
+}
 .linkmobile{
     text-decoration: none;
     color: var(--cor-branca);
+    text-align: center;
 }
 }
 h2{
